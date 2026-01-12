@@ -40,5 +40,41 @@
             <Chinesesimp>启用血氧模拟</Chinesesimp>
             <Ukrainian>Увімкнути імітацію SpO2</Ukrainian>
         </Key>
+        <Key ID="STR_ACE_Medical_Vitals_simulatebloodRegen_Description">
+            <English>Enables blood regeneration simulation.</English>
+        </Key>
+        <Key ID="STR_ACE_Medical_Vitals_simulateRegenRate_DisplayName">
+            <English>Enable Blood Regeneration Simulation</English>
+        </Key>
+        <Key ID="STR_ACE_Medical_Vitals_bloodRegenRate_Description">
+            <English>Controls how quickly blood is regenerated. Blood regeneration is calculated as:\ntime interval (s) * 0.03 mL/s * regen rate (this coefficient)</English>
+        </Key>
+        <Key ID="STR_ACE_Medical_Vitals_bloodRegenRate_DisplayName">
+            <English>Blood Regeneration Rate</English>
+        </Key>
+        <Key ID="STR_ACE_Medical_Vitals_requireClosedWounds_Description">
+            <English>Require closed wounds (no bleeding) before blood can be regenerated.</English>
+        </Key>
+        <Key ID="STR_ACE_Medical_Vitals_requireClosedWounds_DisplayName">
+            <English>Require closed wounds</English>
+        </Key>
+        <Key ID="STR_ACE_Medical_Vitals_requireHeartRate_Description">
+            <English>Require a heart rate (no cardiac arrest) before blood can be regenerated.</English>
+        </Key>
+        <Key ID="STR_ACE_Medical_Vitals_requireHeartRate_DisplayName">
+            <English>Require heart rate</English>
+        </Key>
+        <Key ID="STR_ACE_Medical_Vitals_requireStableVitals_Description">
+            <English>Require stable vitals (normal heart rate and normal blood pressure) before blood can be regenerated.</English>
+        </Key>
+        <Key ID="STR_ACE_Medical_Vitals_requireStableVitals_DisplayName">
+            <English>Require stable vitals</English>
+        </Key>
+        <Key ID="STR_ACE_Medical_Vitals_requireConsciousness_Description">
+            <English>Require consciousness (cannot be unconscious) before blood can be regenerated.</English>
+        </Key>
+        <Key ID="STR_ACE_Medical_Vitals_requireConsciousness_DisplayName">
+            <English>Require consciousness</English>
+        </Key>
     </Package>
 </Project>

@@ -13,3 +13,61 @@
         } forEach (allUnits select {local _x})
     } // reset oxygen demand on setting change
 ] call CBA_fnc_addSetting;
+
+[
+    QGVAR(simulateBloodRegen),
+    "LIST",
+    [LSTRING(simulateBloodRegen_DisplayName), LSTRING(simulateBloodRegen_Description)],
+    [ELSTRING(medical,Category), LSTRING(SubCategory)],
+    [
+        [0, 1, 2],
+        ["STR_A3_OPTIONS_DISABLED", ELSTRING(common,playerOnly), ELSTRING(common,playersAndAI)],
+        1
+    ],
+    1
+] call CBA_fnc_addSetting;
+
+[
+    QEGVAR(bloodRegenRate),
+    "SLIDER",
+    [LSTRING(bloodRegenRate_DisplayName), LSTRING(bloodRegenRate_Description)],
+    [ELSTRING(medical,Category), LSTRING(SubCategory)],
+    [1, 1000, 1, 0],
+    1
+] call CBA_fnc_addSetting;
+
+[
+    QGVAR(requireClosedWounds),
+    "CHECKBOX",
+    [LSTRING(requireClosedWounds_DisplayName), LSTRING(requireClosedWounds_Description)],
+    [ELSTRING(medical,Category), LSTRING(SubCategory)],
+    true,
+    1
+] call CBA_fnc_addSetting;
+
+[
+    QGVAR(requireHeartRate),
+    "CHECKBOX",
+    [LSTRING(requireHeartRate_DisplayName), LSTRING(requireHeartRate_Description)],
+    [ELSTRING(medical,Category), LSTRING(SubCategory)],
+    true,
+    1
+] call CBA_fnc_addSetting;
+
+[
+    QGVAR(requireStableVitals),
+    "CHECKBOX",
+    [LSTRING(requireStableVitals_DisplayName), LSTRING(requireStableVitals_Description)],
+    [ELSTRING(medical,Category), LSTRING(SubCategory)],
+    false,
+    1
+] call CBA_fnc_addSetting;
+
+[
+    QGVAR(requireConsciousness),
+    "CHECKBOX",
+    [LSTRING(requireConsciousness_DisplayName), LSTRING(requireConsciousness_Description)],
+    [ELSTRING(medical,Category), LSTRING(SubCategory)],
+    false,
+    1
+] call CBA_fnc_addSetting;
