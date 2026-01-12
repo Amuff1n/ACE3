@@ -32,14 +32,14 @@
     "SLIDER",
     [LSTRING(bloodRegenRate_DisplayName), LSTRING(bloodRegenRate_Description)],
     [ELSTRING(medical,Category), LSTRING(SubCategory)],
-    [1, 1000, 1, 0],
+    [0, 1000, 1, 1],
     1
 ] call CBA_fnc_addSetting;
 
 [
-    QGVAR(requireClosedWounds),
+    QGVAR(requireNoBleeding),
     "CHECKBOX",
-    [LSTRING(requireClosedWounds_DisplayName), LSTRING(requireClosedWounds_Description)],
+    [LSTRING(requireNoBleeding_DisplayName), LSTRING(requireNoBleeding_Description)],
     [ELSTRING(medical,Category), LSTRING(SubCategory)],
     true,
     1

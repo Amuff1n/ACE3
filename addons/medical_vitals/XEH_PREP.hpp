@@ -1,6 +1,7 @@
 PREP(consumeIVs);
 PREP(consumeMedications);
 PREP(handleUnitVitals);
+PREP(regenBlood);
 PREP(scanConfig);
 PREP(updateBloodPressure);
 PREP(updateBloodVolume);
