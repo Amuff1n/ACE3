@@ -21,8 +21,9 @@ params ["_unit", "_deltaT", "_syncValues"];
 
 private _bleeding = -_deltaT * GET_BLOOD_LOSS(_unit);
 private _ivChange = [_unit, _deltaT, _syncValues] call FUNC(consumeIVs);
+private _bloodRegen = [_unit, _deltaT] call FUNC(regenBlood);
 
-private _bloodVolume = GET_BLOOD_VOLUME(_unit) + _bleeding + _ivChange;
+private _bloodVolume = GET_BLOOD_VOLUME(_unit) + _bleeding + _ivChange + _bloodRegen;
 _bloodVolume = 0 max _bloodVolume min DEFAULT_BLOOD_VOLUME;
 
 // @todo: replace this and the rest of the setVariable with EFUNC(common,setApproximateVariablePublic)

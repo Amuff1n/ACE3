@@ -28,7 +28,7 @@
 ] call CBA_fnc_addSetting;
 
 [
-    QEGVAR(bloodRegenRate),
+    QGVAR(bloodRegenRate),
     "SLIDER",
     [LSTRING(bloodRegenRate_DisplayName), LSTRING(bloodRegenRate_Description)],
     [ELSTRING(medical,Category), LSTRING(SubCategory)],
