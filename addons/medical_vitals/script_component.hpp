@@ -18,3 +18,7 @@
 #include "\z\ace\addons\main\script_macros.hpp"
 
 #define BASE_OXYGEN_USE -0.25
+
+// Blood regeneration per second calculation:
+// Takes body around 24 hours to recover blood volume. Average 0.03 ml/s
+#define BLOOD_REGEN_PER_SECOND 0.03

@@ -64,10 +64,6 @@
 // 250 ml should take 60 seconds to fill. 250 ml / 60 s ~ 4.1667 ml/s.
 #define IV_CHANGE_PER_SECOND 4.1667 // in milliliters per second
 
-// Blood regeneration per second calculation:
-// Takes body around 24 hours to recover blood volume. Average 0.03 ml/s
-#define BLOOD_REGEN_PER_SECOND 0.03
-
 // Minimum amount of damage required for penetrating wounds (also minDamage for velocity wounds)
 #define PENETRATION_THRESHOLD EGVAR(medical,const_penetrationThreshold)
 #define PENETRATION_THRESHOLD_DEFAULT 0.35
