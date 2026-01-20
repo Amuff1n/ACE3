@@ -11,3 +11,6 @@ PREP(updatePain);
 PREP(updatePainSuppress);
 PREP(updatePeripheralResistance);
 PREP(updateState);
+
+PREP(addSpO2DutyFactor);
+PREP(removeSpO2DutyFactor);
